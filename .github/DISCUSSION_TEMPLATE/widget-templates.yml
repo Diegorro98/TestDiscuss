@@ -1,0 +1,25 @@
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Please provide a description of the widget template that you will be showing in this discussion.
+        You can also include images showing the widget template at your widget board.
+      placeholder: "This widget template allows you to..."
+    validations:
+      required: true
+  - type: textarea
+    id: link
+    attributes:
+      label: Link to the Adaptive Cards Designer with template and data payloads
+      description: |
+        Upload the template and the data json files to this text area, then use the generated links for the files 
+        to create a link to the Adaptive Cards Designer that refears to these files throught `card` and `data` query params.
+        The link should look similar to this:
+        `https://adaptivecards.io/designer/index.html?card=<link to template>&data=<link to data>`
+      value: |
+        [Link to my cool widget template](https://adaptivecards.io/designer/index.html?card=<link to template>&data=<link to data>)
+    validations:
+      required: true
+        
